@@ -125,6 +125,7 @@ app.post("/api/adduser", function(req, res) {
 
 
     // Start Server: Listen on port 8080
-
-    app.listen(8080, () => {
-        console.log('Listening on port 8080');}); 
+var port=3030;
+    app.listen(port, function() => {
+        console.log('server running on port number:'+port);
+		}); 
